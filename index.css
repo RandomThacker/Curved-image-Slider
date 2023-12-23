@@ -1,0 +1,139 @@
+section {
+  background: #000;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #000;
+  height: 100%;
+  width: 100%;
+  font-family: "Montserrat", sans-serif;
+  overflow-x: hidden;
+}
+.durability-section {
+  background-color: #555555;
+  height: 100vh;
+  max-width: 100vw;
+  background-image: url("./images/bg.jpg");
+}
+
+.durability-header {
+  color: white;
+  font-size: clamp(2.5rem, 6vw, 4.5rem);
+  padding: 0 10%;
+  text-align: center;
+  font-weight: 900;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 45%;
+  padding-bottom: 10%;
+}
+
+.slider-section {
+  height: 50%;
+  /* position: relative; */
+  width: 100%;
+}
+
+.durable-tyres-card-container {
+  color: white;
+  height: fit-content;
+  /* width: 6%; */
+}
+
+.durable-tyres-card-container {
+  position: absolute;
+  min-width: 350px;
+  cursor: pointer;
+}
+
+.durable-tyre-image {
+  display: flex;
+  background-color: white;
+  justify-content: center;
+}
+
+.durable-tyres-card-container img {
+  width: 100%;
+  pointer-events: none;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.durable-tyre-text-container {
+  display: flex;
+  justify-content: space-between;
+  font-size: clamp(0.9rem, 3vw, 1.25rem);
+  text-transform: uppercase;
+}
+
+.durable-hover-button {
+  color: white;
+  font-size: 20px;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  background-color: #000000c3;
+  padding: 2% 3%;
+  border-radius: 25%;
+  z-index: 9;
+  width: 40%;
+}
+
+.durable-tyre-card-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  /* background-color: rgba(0, 5, 6, 0.353); */
+  z-index: 9;
+}
+
+.durable-tyres-card-container:hover .durable-tyre-card-overlay {
+  opacity: 1;
+  cursor: pointer;
+  transition: all 300ms;
+}
+
+.durable-hover-button:active {
+  filter: brightness(80%);
+}
+
+.durable-card {
+  /* position: absolute; */
+  height: 100px;
+  width: 100px;
+  /* background-color: aqua; */
+}
+
+/* Media query for smaller screen sizes */
+@media screen and (max-width: 768px) {
+  .durable-tyres-card-container {
+    min-width: 250px; /* Adjust min-width for smaller screens */
+  }
+}
+
+/* Media query for even smaller screen sizes */
+@media screen and (max-width: 480px) {
+  .durable-tyres-card-container {
+    min-width: 180px; /* Adjust min-width for even smaller screens */
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .durable-tyres-card-container {
+    min-width: 180px; /* Adjust min-width for even smaller screens */
+  }
+}

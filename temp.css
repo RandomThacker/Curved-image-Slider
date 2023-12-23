@@ -1,0 +1,78 @@
+/* ------------card -----------------*/
+
+.durable-tyres-card-container {
+  width: clamp(350px, 50vw, 450px);
+  height: clamp(350px, 50vw, 450px);
+  color: white;
+  height: fit-content;
+  /* width: 6%; */
+  aspect-ratio: 1/1;
+}
+
+.durable-tyres-card-container {
+  position: relative;
+
+  width: 30%;
+  max-width: 500px;
+  min-width: 200px;
+  cursor: pointer;
+}
+
+.durable-tyre-image {
+  display: flex;
+  background-color: white;
+  justify-content: center;
+}
+
+.durable-tyres-card-container img {
+  width: 100%;
+  pointer-events: none;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.durable-tyre-text-container {
+  display: flex;
+  justify-content: space-between;
+  font-size: clamp(0.9rem, 3vw, 1.25rem);
+  text-transform: uppercase;
+}
+
+.durable-hover-button {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  background-color: #000000c3;
+  padding: 2% 3%;
+  border-radius: 25%;
+  z-index: 9;
+  width: 40%;
+}
+
+.durable-tyre-card-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: rgba(0, 5, 6, 0.353);
+  z-index: 9;
+}
+
+.durable-tyres-card-container:hover .durable-tyre-card-overlay {
+  opacity: 1;
+  cursor: pointer;
+  transition: all 300ms;
+}
+
+.durable-hover-button:active {
+  filter: brightness(80%);
+}
