@@ -52,5 +52,5 @@ ScrollTrigger.create({
   start: "top top",
   end: "bottom -150%",
   scrub: true,
-  markers: true, // For debug purposes, can be removed
+  // markers: true, 
 });
