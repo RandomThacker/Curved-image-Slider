@@ -27,6 +27,8 @@ function updateStagger() {
       alignOrigin: [1.2, 1.5],
       // set x of align origin to 1.2 so it goes behind the screen
       autoRotate: true,
+      start: 0,
+    end: 1,
     },
     transformOrigin: "50% 50%",
     duration: 3,
@@ -34,7 +36,7 @@ function updateStagger() {
     ease: "power1.inOut",
     stagger: staggerValue, // Change stagger value based on screen width
   });
-  cardAnimationTimeline.reverse();
+  // cardAnimationTimeline.reverse();
 }
 
 // Initial stagger setup
