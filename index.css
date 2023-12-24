@@ -15,10 +15,12 @@ body {
   overflow-x: hidden;
 }
 .durability-section {
-  background-color: #555555;
+  background-color: #0a076d;
   height: 100vh;
   max-width: 100vw;
-  background-image: url("./images/bg.jpg");
+  position: relative;
+/* width: 130%; */
+  /* background-image: url("./images/bg.jpg"); */
 }
 
 .durability-header {
@@ -50,6 +52,7 @@ body {
   position: absolute;
   min-width: 350px;
   cursor: pointer;
+  bottom: 50%;
 }
 
 .durable-tyre-image {
@@ -59,7 +62,7 @@ body {
 }
 
 .durable-tyres-card-container img {
-  width: 100%;
+  width: 80%;
   pointer-events: none;
   z-index: 1;
   cursor: pointer;
@@ -97,7 +100,6 @@ body {
   width: 100%;
   opacity: 0;
   transition: 0.5s ease;
-  /* background-color: rgba(0, 5, 6, 0.353); */
   z-index: 9;
 }
 
@@ -113,6 +115,7 @@ body {
 
 .durable-card {
   /* position: absolute; */
+  /* left: -30%; */
   height: 100px;
   width: 100px;
   /* background-color: aqua; */
